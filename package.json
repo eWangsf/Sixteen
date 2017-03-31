@@ -1,0 +1,27 @@
+{
+  "name": "sixteen",
+  "version": "1.0.0",
+  "description": "- Project of the old sixteen project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --config mywebpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eWangsf/Sixteen.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eWangsf/Sixteen/issues"
+  },
+  "homepage": "https://github.com/eWangsf/Sixteen#readme",
+  "devDependencies": {
+    "path": "^0.12.7",
+    "webpack": "^2.3.2"
+  },
+  "dependencies": {
+    "lodash": "^4.17.4"
+  }
+}
