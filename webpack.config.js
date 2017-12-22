@@ -12,11 +12,12 @@ module.exports = {
     module: {
       rules: [
         {
-            test: /(\.jsx|\.js)$/,
+            test: /\.jsx?$/,
             use: {
                 loader: 'babel-loader'
             },
             exclude: /node_modules/
+
         }, {
             test: /\.css$/,
             use: [
@@ -48,7 +49,8 @@ module.exports = {
         containers: path.join(__dirname, 'src/containers'),
         actions: path.join(__dirname, 'src/actions'),
         reducers: path.join(__dirname, 'src/reducers')
-      }
+      },
+      extensions: [".js", ".jsx"]
     },
 
  
