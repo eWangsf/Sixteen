@@ -1,0 +1,83 @@
+@import '~scss/index.scss';
+
+.#{$prefix}header {
+  padding: 8px;
+  height: 60px;
+  background: $header-background;
+  border-radius: 5px 5px 0 0;
+  box-sizing: border-box;
+
+  .logo {
+    padding-left: 46px;
+    width: 170px;
+    cursor: pointer;
+    background-image: url('~images/logo.png');
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    background-position: 7px 7px;
+
+    span {
+      font-size: 22px;
+      color: #fff;
+      font-weight: 700;
+      line-height: 44px;
+    }
+  }
+
+  .nav {
+    padding: 11px 0;
+    flex: 4;
+
+    .icon {
+      width: 24px;
+      height: 20px;
+    }
+
+    .step {
+      border: 1px solid #666;
+      background-size: 14px 14px;
+      background-position: 5px 3px;
+    }
+    .back {
+      margin-right: -1px;
+      background-image: url('~images/back1.png');
+      border-radius: 4px 0 0 4px;
+    }
+    .forward {
+      background-image: url('~images/forward1.png');
+      border-radius: 0 4px 4px 0;
+    }
+    .search {
+      margin-left: 10px;
+      width: 250px;
+      height: 24px;
+      background: #fff;
+      border-radius: 12px;
+
+      .icon {
+        margin: 4px 5px;
+        background-size: 16px 16px;
+        background-image: url('~images/search.png');
+      }
+      
+      .search-container {
+        flex: 1;
+      }
+      input {
+        width: 160px;
+        outline: none;
+        border: none;
+      }
+    }
+  }
+
+  .setting {
+    flex: 1;
+
+    .mail {
+      background-image: url('~images/mail.png');
+      background-size: 100% 100%;
+    }
+  }
+}
+

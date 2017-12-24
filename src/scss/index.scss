@@ -1,0 +1,15 @@
+@import './variable.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.icon {
+  display: inline-block;
+  background-repeat: no-repeat;
+}

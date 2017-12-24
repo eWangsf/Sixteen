@@ -19,6 +19,17 @@ module.exports = {
             exclude: /node_modules/
 
         }, {
+            test: /\.scss$/,
+            use: [
+                {
+                    loader: "style-loader"
+                }, {
+                    loader: "css-loader"
+                }, {
+                    loader: "sass-loader"
+                }
+            ]
+        }, {
             test: /\.css$/,
             use: [
                 {
@@ -30,6 +41,14 @@ module.exports = {
                     }
                 }, {
                     loader: 'postcss-loader'
+                }
+            ]
+        }, {
+            test: /\.(png|jpg|gif)$/,
+            use: [
+                {
+                    loader: 'file-loader',
+                    options: {}
                 }
             ]
         }
@@ -47,12 +66,14 @@ module.exports = {
     resolve: {
       alias: {
         containers: path.join(__dirname, 'src/containers'),
+        components: path.join(__dirname, 'src/components'),
         actions: path.join(__dirname, 'src/actions'),
-        reducers: path.join(__dirname, 'src/reducers')
+        reducers: path.join(__dirname, 'src/reducers'),
+        scss: path.join(__dirname, 'src/scss'),
+        images: path.join(__dirname, 'src/images')
       },
       extensions: [".js", ".jsx"]
     },
-
  
     devtool: 'eval-source-map',
     devServer: {
