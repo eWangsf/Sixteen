@@ -1,0 +1,11 @@
+@import '~scss/index.scss';
+
+.#{$prefix}player {
+  height: 64px;
+  background-color: red;
+  // border: 1px solid $player-border-color;
+  // border-top-width: 0;
+  // border-radius: 0 0 5px 5px;
+  // background: $player-background;
+}
+

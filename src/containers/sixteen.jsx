@@ -4,7 +4,7 @@ import * as actions from 'actions/action.js';
 
 import Header from 'components/header/index';
 import Main from 'components/main/index';
-import Player from 'components/player/index';
+import Controller from 'components/controller/index';
 
 import './sixteen.scss';
 
@@ -23,7 +23,7 @@ export class Sixteen extends Component {
     return <div className={`${prefix}container`}>
         <Header />
         <Main />
-        <Player />
+        <Controller />
       </div>
   }
 }

@@ -70,7 +70,8 @@ module.exports = {
         actions: path.join(__dirname, 'src/actions'),
         reducers: path.join(__dirname, 'src/reducers'),
         scss: path.join(__dirname, 'src/scss'),
-        images: path.join(__dirname, 'src/images')
+        images: path.join(__dirname, 'src/images'),
+        data: path.join(__dirname, 'src/data')
       },
       extensions: [".js", ".jsx"]
     },

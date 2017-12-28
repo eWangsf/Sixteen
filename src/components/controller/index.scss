@@ -1,0 +1,10 @@
+@import '~scss/index.scss';
+
+.#{$prefix}controller {
+  height: 64px;
+  border: 1px solid $player-border-color;
+  border-top-width: 0;
+  border-radius: 0 0 5px 5px;
+  background: $player-background;
+}
+

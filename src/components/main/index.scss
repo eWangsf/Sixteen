@@ -1,7 +1,9 @@
 @import '~scss/index.scss';
 
 .#{$prefix}main {
-  color: red;
+  height: 500px;
+  border: 1px solid $main-border-color;
+
 }
 
 

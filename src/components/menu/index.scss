@@ -1,0 +1,88 @@
+@import '~scss/index.scss';
+
+.#{$prefix}menu {
+  width: 200px;
+  background: $menu-background;
+  font-size: 14px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+
+  ul {
+    list-style: none;
+  }
+
+  .section-title {
+    padding: 0 6px;
+    line-height: 30px;
+    font-size: 13px;
+    color: #777;
+  }
+  .section {
+    padding-bottom: 10px;
+  }
+    
+  .item {
+    padding: 0 15px;
+    line-height: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    
+    .icon {
+      margin-right: 8px;
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background-repeat: no-repeat;
+      background-size: 20px 20px;
+    }
+    .title {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      flex: 1;
+    }
+  }
+  .item.active {
+    background: #dcdcdc;
+  }
+
+  .find {
+    background-image: url('~images/menu/music_1.png');
+  }
+  .broadcast {
+    background-image: url('~images/menu/broadcast.png');
+  }
+  .mv {
+    background-image: url('~images/menu/mv.png');
+  }
+  .friends {
+    background-image: url('~images/menu/friends.png');
+  }
+
+  .itunes {
+    background-image: url('~images/menu/Itunes-logo.png');
+  }
+  .download {
+    background-image: url('~images/menu/download.png');
+  }
+  .person {
+    background-image: url('~images/menu/person.png');
+  }
+  .music2 {
+    background-image: url('~images/menu/music_2.png');
+  }
+  .list {
+    background-image: url('~images/menu/music-list.png');
+  }
+
+  
+
+  
+  
+
+
+}
+
+
+
