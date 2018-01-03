@@ -80,6 +80,7 @@ class Menu extends Component {
       <div className="player">
         <Player />
       </div>
+
     </div>
   }
 }

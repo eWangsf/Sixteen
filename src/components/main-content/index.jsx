@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import Types from 'components/types/index';
 import './index.scss';
 
 class MainContent extends Component {
@@ -11,6 +11,7 @@ class MainContent extends Component {
     const { prefix } = this.props;
 
     return <div className={`${prefix}main-content`}>
+      <Types />
       main-content
     </div>
   }

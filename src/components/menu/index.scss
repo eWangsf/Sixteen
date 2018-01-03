@@ -6,6 +6,8 @@
   font-size: 14px;
   overflow-x: hidden;
   overflow-y: scroll;
+  border-right: 1px solid $menu-border-color;
+  // position: relative;
 
   ul {
     list-style: none;
@@ -77,6 +79,12 @@
   }
 
   
+  .player {
+    width: 200px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
 
   
   

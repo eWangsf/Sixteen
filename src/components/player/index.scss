@@ -1,11 +1,75 @@
 @import '~scss/index.scss';
 
 .#{$prefix}player {
-  height: 64px;
-  background-color: red;
-  // border: 1px solid $player-border-color;
-  // border-top-width: 0;
-  // border-radius: 0 0 5px 5px;
-  // background: $player-background;
+  padding: 8px 0;
+  height: 60px;
+  border-top: 1px solid $player-border-color;
+  background: $player-background;
+  // box-sizing: border-box;
+
+  .cover {
+    width: 75px;
+    justify-content: space-around;
+    align-items: center;
+
+    .cover-img {
+      width: 60px;
+      height: 60px;
+      background-size: 60px 60px;
+      background-repeat: no-repeat;
+      background-image: url("~images/cover.jpg");
+    }
+
+  }
+  
+  .info {
+    flex: 1;
+    overflow: hidden;
+    flex-direction: column;
+  }
+  .operation {
+    width: 30px;
+  }
+
+  .title,
+  .singer {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+  .title {
+    height: 25px;
+    line-height: 25px;
+  }
+  .singer {
+    height: 22px;
+    line-height: 22px;
+    font-size: 13px;
+    color: #999;
+  }
+
+  .icon {
+    width: 25px;
+    height: 25px;
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+  .share {
+    background-image: url("~images/share.png");
+  }
+  .like {
+    margin-top: -5px;
+    background-image: url("~images/like.png");
+  }
+  .liked {
+    background-image: url("~images/like_red.png");
+  }
+  
+
+
+
+
 }
 
