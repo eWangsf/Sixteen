@@ -2,9 +2,21 @@
 
 
 .#{$prefix}types {
-  height: 40px;
-  line-height: 40px;
-  border: 1px solid red;
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 1px solid $index-types-border-color;
+
+  ul {
+    list-style: none;
+    justify-content: center;
+
+    .type {
+      padding: 0 25px;
+    }
+    .active {
+      color: $index-types-active-color;
+    }
+  }
 }
 
 

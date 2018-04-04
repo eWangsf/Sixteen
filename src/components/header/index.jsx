@@ -11,6 +11,10 @@ class Header extends Component {
     console.warn('backToIndex');
   }
 
+  test() {
+    const { dispatch, someaction } = this.props;
+  }
+  
   render() {
     const { prefix } = this.props;
 
@@ -20,7 +24,7 @@ class Header extends Component {
         <div className="logo" onClick={this.backToIndex.bind(this)}>
           <span>网易云音乐</span>
         </div>
-        <div className="nav flex">
+        <div className="nav flex" onClick={this.test.bind(this)}>
           <div className="btns flex">
             <span className="icon step back"></span>
             <span className="icon step forward"></span>
